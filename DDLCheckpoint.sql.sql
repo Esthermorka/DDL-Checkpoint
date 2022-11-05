@@ -25,6 +25,6 @@ create table orders(
 	constraint order_fk2 foreign key(product_id) references product_1(product_id)
 )
 
-Alter table product_1 add category varchar(20)
+Alter table product_1 add column category varchar(20)
 
-alter table orders add OrderDate date default current_date
+alter table orders add column OrderDate date default current_date
