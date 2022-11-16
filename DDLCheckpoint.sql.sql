@@ -3,7 +3,7 @@
 create table product_1(
 	product_id varchar(20) constraint pk_pro primary key,
 	product_nmae varchar(20) not null,
-	price int
+	price int check price > 0
 )
 
 --create customer table
